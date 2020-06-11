@@ -1,9 +1,25 @@
 
-#circle{
-    shape-outside: circle(50%);
-    width: 200px;
-    height: 200px;
+#ellipse{
+    shape-outside: ellipse(150px 300px at 50% 50%);
+    width: 300px;
+    height: 600px;
     background-color: aliceblue;
     float: left;
     border-radius: 50%;
 }
+
+#inset{
+    shape-outside: content-box;
+    height: 50px;
+    width: 200px;
+    margin-top: 50px;
+    float: left;
+    background-color: aliceblue;
+}
+
+p::after{
+    content:"";
+    clear: both;
+    display: block;
+}
+
